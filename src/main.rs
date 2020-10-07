@@ -21,9 +21,9 @@ fn check(req: Request) -> impl Responder {
 fn list(req: Request) -> vial::Result<String> {
     let mut env = Env::new();
     env.set("todos", req.todos().all());
-
-    let list = env.render(asset::to_string("hat/list.hat")?).unwrap();
-    Ok(env.render(asset::to_string("hat/layout.hat")?).unwrap())
+    let body = env.render(&asset::to_string("hat/list.hat")?).unwrap();
+    env.set("body", body);
+    Ok(env.render(&asset::to_string("hat/layout.hat")?).unwrap())
 }
 
 fn create(req: Request) -> Option<Response> {

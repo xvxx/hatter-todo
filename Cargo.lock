@@ -64,7 +64,7 @@ checksum = "bcc8e0c9bce37868955864dbecd2b1ab2bdf967e6f28066d65aaac620444b65c"
 
 [[package]]
 name = "hatter"
-version = "0.0.2-dev"
+version = "0.0.3-dev"
 
 [[package]]
 name = "hatter-todo"
@@ -114,12 +114,6 @@ name = "object"
 version = "0.19.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9cbca9424c482ee628fa549d9c812e2cd22f1180b9222c9200fdfa6eb31aecb2"
-
-[[package]]
-name = "percent-encoding"
-version = "2.1.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d4fd5641d01c8f18a23da7b6fe29298ff4b55afcccdf78973b24cf3175fee32e"
 
 [[package]]
 name = "proc-macro2"
@@ -226,11 +220,10 @@ checksum = "826e7639553986605ec5979c7dd957c7895e93eabed50ab2ffa7f6128a75097c"
 
 [[package]]
 name = "vial"
-version = "0.1.0"
+version = "0.1.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a28681de3419eb9c7f54bb4a2e5f793420924303c390c4f388e4b6cb992c4b83"
+checksum = "aea544d30bd8259601e8dbe3a166f3ba1c5ce634dad6de2ac3c22728970d16e3"
 dependencies = [
  "libc-strftime",
- "percent-encoding",
  "threadpool",
 ]

@@ -1,13 +1,13 @@
 <h1> TODOs
-if todos.len() == 0
+if len(todos) == 0
   <i> Add some TODOs to get started.
 
 <ul>
-  for todo in todos
+  for id, todo in todos
     <li>
     <label>
-      <input:checkbox checked=checked data-id=id onclick=(toggleTodo(this))/>
-      <span> todo
+      <input:checkbox checked={todo[0]} data-id=id onclick=(toggleTodo(e.target))/>
+      <span> todo[1]
   <li>
     <form POST="">
       <input:text@todo />

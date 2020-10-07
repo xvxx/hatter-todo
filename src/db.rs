@@ -1,4 +1,4 @@
-use std::mem;
+#![allow(unused)]
 
 extern crate rustbreak;
 use rustbreak::{deser::Ron, FileDatabase};
@@ -49,7 +49,7 @@ impl TodoDB {
                 if id < db.len() {
                     let mut todo = db[id].clone();
                     todo.0 = !todo.0;
-                    mem::replace(&mut db[id], todo);
+                    std::mem::replace(&mut db[id], todo);
                 }
             })
             .unwrap();
