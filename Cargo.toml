@@ -1,0 +1,11 @@
+[package]
+name = "hatter-todo"
+version = "0.1.0"
+authors = ["chris west <c@xvxx.io>"]
+edition = "2018"
+license = "MIT"
+
+[dependencies]
+vial = { version = "0.1", features = ["state"] }
+rustbreak = {version = "2.0.0-rc3", features = ["ron_enc"] }
+hatter = { path = "../hatter" }

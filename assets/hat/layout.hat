@@ -1,0 +1,14 @@
+<head>
+  <title>TODO</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <script src="/js/app.js">
+<body>
+  <main> body
+  <script type="text/javascript"> """
+    function toggleTodo(el) {
+      var id = el.getAttribute("data-id");
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", "/check/" + id);
+      xhr.send(null);
+    }
+"""

@@ -1,0 +1,14 @@
+<h1> TODOs
+if todos.len() == 0
+  <i> Add some TODOs to get started.
+
+<ul>
+  for todo in todos
+    <li>
+    <label>
+      <input:checkbox checked=checked data-id=id onclick=(toggleTodo(this))/>
+      <span> todo
+  <li>
+    <form POST="">
+      <input:text@todo />
+      <input:submit value="add" />
